@@ -2,6 +2,19 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+st.markdown("""
+<style>
+    /* Muda a cor de fundo da barra lateral */
+    [data-testid="stSidebarContent"] {
+        background-color: #f0f2f6; /* Use a cor que você quiser aqui */
+    }
+    /* Muda a cor dos filtros na barra lateral */
+    [data-testid="stSidebar"] {
+        background-color: #f0f2f6; /* Use a cor que você quiser aqui */
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # --- Configuração da Página ---
 # Define o título da página, o ícone e o layout para ocupar a largura inteira.
 st.set_page_config(
