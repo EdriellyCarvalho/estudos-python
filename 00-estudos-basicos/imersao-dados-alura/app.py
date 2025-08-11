@@ -2,33 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.markdown("""
-<style>
-    /* Estilo para a barra lateral completa */
-    [data-testid="stSidebarContent"] {
-        background-color: #f0f2f6; /* Cor de fundo da barra lateral (cinza claro) */
-    }
-
-    /* Estilo para as caixas de filtro (os elementos vermelhos que você quer mudar) */
-    span[data-baseweb="tag"] {
-        background-color: #0c0d4c !important; /* Cor de fundo (azul escuro) */
-        color: white !important; /* Cor do texto dentro da caixa (branco) */
-        border-color: #0c0d4c !important; /* Cor da borda da caixa */
-    }
-    
-    /* Estilo para o texto dos filtros, garantindo que o texto seja branco */
-    span[data-baseweb="tag"] > span {
-        color: white !important;
-    }
-
-    /* Estilo para o ícone de 'x' dos filtros, garantindo que seja branco */
-    span[data-baseweb="tag"] svg path {
-        fill: white !important;
-    }
-    
-</style>
-""", unsafe_allow_html=True)
-
 # --- Configuração da Página ---
 # Define o título da página, o ícone e o layout para ocupar a largura inteira.
 st.set_page_config(
