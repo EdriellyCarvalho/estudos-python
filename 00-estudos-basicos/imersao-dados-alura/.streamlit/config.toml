@@ -1,5 +1,16 @@
 [theme]
-base="light"
+
+# Cor primária
 primaryColor="#0c0d4c"
-[theme.sidebar]
-backgroundColor="#0c0d4c"
+
+# Cor de fundo da página
+backgroundColor="#f0f2f6"
+
+# Cor de fundo dos componentes, como o sidebar
+secondaryBackgroundColor="#ffffff"
+
+# Cor do texto
+textColor="#000000"
+
+# Estilo de fonte
+font="sans serif"
