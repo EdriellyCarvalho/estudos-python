@@ -4,13 +4,26 @@ import plotly.express as px
 
 st.markdown("""
 <style>
-    /* Muda a cor de fundo da barra lateral */
+    /* Estilo para a barra lateral completa */
     [data-testid="stSidebarContent"] {
-        background-color: #f0f2f6; /* Use a cor que você quiser aqui */
+        background-color: #f0f2f6; /* Cor de fundo da barra lateral (cinza claro) */
     }
-    /* Muda a cor dos filtros na barra lateral */
+
+    /* Estilo para a barra lateral (parte onde ficam os filtros) */
     [data-testid="stSidebar"] {
-        background-color: #f0f2f6; /* Use a cor que você quiser aqui */
+        background-color: #f0f2f6; /* Cor de fundo da barra lateral (cinza claro) */
+    }
+
+    /* Estilo para as caixas de filtro (os elementos vermelhos que você quer mudar) */
+    .st-af {
+        background-color: #0c0d4c !important; /* Cor de fundo (azul escuro) */
+        color: white !important; /* Cor do texto dentro da caixa (branco) */
+        border-color: #0c0d4c !important; /* Cor da borda da caixa (opcional) */
+    }
+
+    /* Estilo para o texto dos filtros na barra lateral */
+    .st-af > span {
+        color: white !important; /* Cor do texto dos filtros (branco) */
     }
 </style>
 """, unsafe_allow_html=True)
