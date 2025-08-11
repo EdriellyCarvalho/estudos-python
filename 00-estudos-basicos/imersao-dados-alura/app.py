@@ -9,22 +9,23 @@ st.markdown("""
         background-color: #f0f2f6; /* Cor de fundo da barra lateral (cinza claro) */
     }
 
-    /* Estilo para a barra lateral (parte onde ficam os filtros) */
-    [data-testid="stSidebar"] {
-        background-color: #f0f2f6; /* Cor de fundo da barra lateral (cinza claro) */
-    }
-
     /* Estilo para as caixas de filtro (os elementos vermelhos que você quer mudar) */
-    .st-af {
+    span[data-baseweb="tag"] {
         background-color: #0c0d4c !important; /* Cor de fundo (azul escuro) */
         color: white !important; /* Cor do texto dentro da caixa (branco) */
-        border-color: #0c0d4c !important; /* Cor da borda da caixa (opcional) */
+        border-color: #0c0d4c !important; /* Cor da borda da caixa */
+    }
+    
+    /* Estilo para o texto dos filtros, garantindo que o texto seja branco */
+    span[data-baseweb="tag"] > span {
+        color: white !important;
     }
 
-    /* Estilo para o texto dos filtros na barra lateral */
-    .st-af > span {
-        color: white !important; /* Cor do texto dos filtros (branco) */
+    /* Estilo para o ícone de 'x' dos filtros, garantindo que seja branco */
+    span[data-baseweb="tag"] svg path {
+        fill: white !important;
     }
+    
 </style>
 """, unsafe_allow_html=True)
 
